@@ -126,6 +126,9 @@
     background: none;
     border: none;
     text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
 }
 
 .mobileDropdown .navBtn, .mobileDropdown .signOutBtn {
