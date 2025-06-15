@@ -1,0 +1,243 @@
+.store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 147px;
+    padding-bottom: 72px;
+    gap: 40px;
+    border-bottom: 1px solid var(--black-400);
+    background-color: var(--cream-400);
+}
+
+.storeTabs {
+    background-color: var(--white-500);
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    gap: 16px;
+    padding-inline: 40px;
+    border-bottom: 1px solid var(--black-400);
+}
+
+.storeTabs button {
+    text-transform: capitalize;
+    padding: 8px 12px;
+    background-color: var(--white-500);
+    color: var(--black-500);
+    border: 1px solid var(--black-400);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: -0.48;
+    font-weight: 600;
+}
+
+.storeGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    padding: 72px 40px 0px 40px;
+    width: 100%;
+}
+
+.storeCard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    background: var(--white-500);
+    border: 1px solid var(--black-400);
+    border-radius: 8px;
+}
+
+.storeCardImage {
+    background-color: var(--black-200);
+    width: 100%;
+    height: 292px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.storeCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.storeCardImage img:hover {
+    transform: scale(1.2);
+}
+
+.storeCardDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.storeCardDetails a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.storeCardDetails h4, .storeCardDetails p {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    font-weight: 600;
+}
+
+.storeCardDetails h4 {
+    font-family: var(--title);
+    color: var(--black-800);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.storeCardDetails p {
+    color: var(--black-500);
+}
+
+.storeCardDetails button {
+    background-color: var(--white-500);
+    height: 32px;
+    width: 32px;
+    border: 1px solid var(--black-400);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.storeCardDetails button:hover {
+    background-color: var(--black-300);
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.loadMore {
+    width: fit-content;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    font-weight: 600;
+    color: var(--white-500);
+    background-color: var(--black-800);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 64px;
+    cursor: pointer;
+}
+
+.loadMore:hover {
+    background-color: var(--black-500);
+    transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 440px) {
+    .store {
+        padding-top: 200px;
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+
+    .storeTabs {
+         padding-inline: 24px;
+         flex-wrap: wrap;
+         height: fit-content;
+         padding: 20px;
+    }
+
+    .storeGrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 40px 24px 0px 24px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 441px) and (max-width: 768px) {
+    .store {
+        padding-top: 147px;
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+
+    .storeTabs {
+         padding-inline: 24px;
+         flex-wrap: wrap;
+         height: fit-content;
+         padding: 20px;
+    }
+
+    .storeGrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 40px 24px 0px 24px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .store {
+        padding-top: 147px;
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+
+    .storeTabs {
+         padding-inline: 24px;
+         flex-wrap: wrap;
+         height: fit-content;
+         padding: 20px;
+    }
+
+    .storeGrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 40px 24px 0px 24px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .store {
+        padding-top: 147px;
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+
+    .storeTabs {
+         padding-inline: 24px;
+         flex-wrap: wrap;
+         height: fit-content;
+         padding: 20px;
+    }
+
+    .storeGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 40px 24px 0px 24px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .storeGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+    }
+}

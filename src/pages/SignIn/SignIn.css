@@ -1,0 +1,152 @@
+.signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 147px;
+    padding-bottom: 72px;
+    padding-inline: 528px;
+    background-color: var(--cream-400);
+    border-bottom: 1px solid var(--black-400);
+}
+
+.signInContainer {
+    background-color: var(--white-500);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--black-400);
+    border-radius: 8px;
+    padding: 24px;
+    gap: 32px;
+}
+
+.signInHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2px;
+    width: 100%;
+}
+
+.signInHeader h1 {
+    font-family: var(--title);
+    color: var(--black-800);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+}
+
+.signInHeader p {
+    color: var(--black-500);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.64px;
+}
+
+.signInInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 8px;
+}
+
+.input p {
+    color: var(--black-800);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.56px;
+}
+
+.input input {
+    font-family: var(--subtitle);
+    color: var(--black-500);
+    border: 1px solid var(--black-400);
+    padding-inline: 12px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.56px;
+}
+
+.signInLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.signInLinks button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--black-800);
+    color: var(--white-500);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signInLinks button:hover {
+    background-color: var(--black-500);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.signInLinks p {
+    color: var(--black-500);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.64px;
+}
+
+.signInLinks a {
+    color: var(--black-800);
+}
+
+@media (max-width: 600px) {
+    .signIn {
+        padding-top: 107px;
+        padding-bottom: 40px;
+        padding-inline: 24px;  
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .signIn {
+        padding-top: 107px;
+        padding-bottom: 40px;
+        padding-inline: 24px;  
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .signIn {
+        padding-inline: 244px;  
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .signIn {
+        padding-inline: 244px;
+    }
+}

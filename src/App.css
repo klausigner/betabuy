@@ -1,0 +1,13 @@
+.spinnerWrapper {
+    background-color: var(--cream-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 1px solid var(--black-400);
+}
+
+.spinnerWrapper img {
+  width: 48px;
+  height: 48px;
+}
